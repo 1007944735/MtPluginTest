@@ -1,0 +1,31 @@
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version('1.9.0')
+    id 'java-gradle-plugin'
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+gradlePlugin {
+    plugins {
+        MyPlugin {
+            id = 'com.test.plugin.MyPlugin'
+            implementationClass = 'com.test.plugin.MyPlugin'
+        }
+    }
+}

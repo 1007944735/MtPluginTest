@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.sgevf",
+    "module": "CreateResByConfigPlugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "CreateResByConfigPlugin-1.0.0.jar",
+          "url": "CreateResByConfigPlugin-1.0.0.jar",
+          "size": 2100,
+          "sha512": "93d2d87b205441d45cf23ed916f5fa33a037a248153b880a94be9c9a6904b74c46666b626f68af5f1067e2cf125098aa72e415ceb8e0b8d15d9074d1ff320a72",
+          "sha256": "3bb118a41e9275681709a7e1d282ea6d07a78c6a278a0407c001400ed2cb38c6",
+          "sha1": "02e60f09a805a085b5882c56993588c923f3fcc4",
+          "md5": "16fd4b7558185ce7e21328bbbb2413d4"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "CreateResByConfigPlugin-1.0.0.jar",
+          "url": "CreateResByConfigPlugin-1.0.0.jar",
+          "size": 2100,
+          "sha512": "93d2d87b205441d45cf23ed916f5fa33a037a248153b880a94be9c9a6904b74c46666b626f68af5f1067e2cf125098aa72e415ceb8e0b8d15d9074d1ff320a72",
+          "sha256": "3bb118a41e9275681709a7e1d282ea6d07a78c6a278a0407c001400ed2cb38c6",
+          "sha1": "02e60f09a805a085b5882c56993588c923f3fcc4",
+          "md5": "16fd4b7558185ce7e21328bbbb2413d4"
+        }
+      ]
+    }
+  ]
+}
