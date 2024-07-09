@@ -3,6 +3,9 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id 'com.test.plugin.MyPlugin'
 }
+ext {
+    myCustomBuildConfigValue = "Hello from Gradle"
+}
 
 android {
     namespace 'com.example.mylibrary'
@@ -13,6 +16,27 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+    }
+
+    flavorDimensions "test"
+
+    productFlavors {
+        product_A {
+            dimension "test"
+            Config {
+                name "AAA"
+            }
+        }
+
+        product_B {
+            dimension "test"
+            Config {
+                name "CCC"
+            }
+        }
+    }
+    buildFeatures {
+        buildConfig true
     }
 
     buildTypes {
